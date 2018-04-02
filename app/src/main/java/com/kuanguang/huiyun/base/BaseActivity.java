@@ -19,7 +19,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.android.tu.loadingdialog.LoadingDailog;
 import com.kuanguang.huiyun.R;
+import com.kuanguang.huiyun.activity.MainActivity;
 import com.kuanguang.huiyun.common.AppManager;
 import com.kuanguang.huiyun.permission.PermissionReq;
 import com.kuanguang.huiyun.utils.StatusBarUtils;
@@ -44,7 +46,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected ImageView img_rule;//右边按钮
     protected ImageView img_back;//返回按钮
     protected RelativeLayout rel_titleBg;//ActionBar背景色
-    private LoadingDialog dialog;//loading等待框
+//    private LoadingDialog dialog;//loading等待框
+    private com.android.tu.loadingdialog.LoadingDialog dialog;
     private InputMethodManager mInputMethodManager;
     private BaseActivity baseActivity;
     private Unbinder binder;//注解
@@ -60,9 +63,18 @@ public abstract class BaseActivity extends AppCompatActivity {
         mySetContentView(getContentViewId());
         setBarTitle(setBarTitle());
         StatusBarUtils.blackcyBar(baseActivity);
+        initDialog();
         initCreat();
         // 添加Activity到堆栈
         AppManager.getAppManager().addActivity(baseActivity);
+    }
+
+    private void initDialog() {
+        com.android.tu.loadingdialog.LoadingDialog.Builder builder1=new com.android.tu.loadingdialog.LoadingDialog.Builder(ct)
+                .setMessage("加载中...")
+//                .setShowMessage(false)
+                .setCancelable(true);
+        dialog = builder1.create();
     }
 
     @Override
@@ -144,10 +156,11 @@ public abstract class BaseActivity extends AppCompatActivity {
      * 显示loading
      */
     public void showDialog() {
-        dialog = new LoadingDialog(this, R.style.custom_dialog);
-        dialog.setCancelable(true);
-        dialog.setCanceledOnTouchOutside(false);
         dialog.show();
+//        dialog = new LoadingDialog(this, R.style.custom_dialog);
+//        dialog.setCancelable(true);
+//        dialog.setCanceledOnTouchOutside(false);
+//        dialog.show();
     }
 
     /**
