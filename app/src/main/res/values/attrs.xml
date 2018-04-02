@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CarrouselLayout">
+        <attr name="autoRotation" format="boolean" />
+        <attr name="rotationTime" format="integer" />
+        <attr name="r" format="dimension" />
+        <attr name="rotateDirection">
+            <enum name="clockwise" value="0" />
+            <enum name="anticlockwise" value="1" />
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer" />
+        <attr name="progress_max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="GifView">  
+        <attr name="gif" format="reference" />  
+        <attr name="paused" format="boolean" />  
+    </declare-styleable>  
+    <declare-styleable name="CustomTheme">  
+        <attr name="gifViewStyle" format="reference" />  
+    </declare-styleable>
+
+
+    <declare-styleable name="QRefreshLayout"><attr format="float" name="resistance"/></declare-styleable>
+
+    <declare-styleable name="LoadingView">
+
+        <attr name="loadingText" format="string"/>
+        <attr name="loadingTextAppearance" format="reference"/>
+    </declare-styleable>
+
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <declare-styleable name="RatingBarView">
+        <attr name="starImageSize" format="dimension" />
+        <attr name="starCount" format="float" />
+        <attr name="starEmpty" format="reference" />
+        <attr name="starHalf" format="reference" />
+        <attr name="starFill" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="starView">
+        <attr name="defoultImage" format="color|reference"></attr>
+        <attr name="hightImage" format="reference|color"></attr>
+        <attr name="counterAll" format="integer"></attr>
+        <attr name="childWidth" format="dimension|reference"></attr>
+        <attr name="half_star" format="reference|color"></attr>
+        <attr name="support_half" format="boolean"></attr>
+        <attr name="seletedable" format="boolean"></attr>
+        <attr name="precision">
+            <enum name="decimal" value="0" />
+            <enum name="half" value="1" />
+            <enum name="whole" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>

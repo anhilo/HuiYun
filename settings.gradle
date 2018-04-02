@@ -1,0 +1,1 @@
+include ':app', ':convenientbanner', ':baseadapter', ':FlycoTabLayout_Lib', ':pop', ':pager-bottom-tab-strip'

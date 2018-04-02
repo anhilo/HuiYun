@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="theme_bar">#2f80f6</color>
+    <color name="common_bg">#f2f2f2</color>
+    <color name="tv_price">#ffaf4c</color>
+    <color name="tv_green_bg">#0DD483</color>
+
+    <!-- 纯色 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="tv_999">#999999</color>
+    <color name="tv_666">#666666</color>
+    <color name="tv_333">#333333</color>
+    <color name="edit_line">#cccccc</color>
+    <color name="bottom_defaul">#B3BFD0</color>
+
+    <color name="orange">#ff7f00</color>
+    <color name="pink">#f08080</color>
+    <color name="blue">#2C7EFA</color>
+    <color name="red">#db3434</color>
+    <color name="green">#24a34a</color>
+    <color name="yellow">#ffff00</color>
+</resources>
