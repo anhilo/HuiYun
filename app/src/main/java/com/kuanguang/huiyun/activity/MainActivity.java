@@ -42,6 +42,7 @@ public class MainActivity extends BaseActivity {
     public void initCreat() {
         mainActivity = this;
         initNavBottomBar();
+        showDialog();
     }
 
     /**
