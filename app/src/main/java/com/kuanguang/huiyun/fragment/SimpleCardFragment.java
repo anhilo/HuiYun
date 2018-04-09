@@ -1,6 +1,5 @@
 package com.kuanguang.huiyun.fragment;
 
-import android.view.View;
 import android.widget.TextView;
 
 import com.kuanguang.huiyun.R;

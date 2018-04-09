@@ -26,7 +26,7 @@
                 android:layout_height="match_parent"
                 android:layout_centerInParent="true"
                 android:gravity="center"
-                android:text="优惠活动"
+                android:text="领券中心"
                 android:textColor="@color/tv_333"
                 android:textSize="18sp" />
 
