@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/baseadapter" />
             <option value="$PROJECT_DIR$/convenientbanner" />
+            <option value="$PROJECT_DIR$/loadingdialog" />
             <option value="$PROJECT_DIR$/pager-bottom-tab-strip" />
             <option value="$PROJECT_DIR$/pop" />
           </set>

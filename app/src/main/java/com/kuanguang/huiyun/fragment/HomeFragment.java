@@ -53,8 +53,11 @@ public class HomeFragment extends BaseFragment{
         list.add(new TestModel());
         list.add(new TestModel());
         list.add(new TestModel());
+        list.get(0).statue = 1;
+        list.get(1).statue = 2;
+        list.get(2).statue = 3;
 
-        mainCouponAdapter = new MainCouponAdapter(list);
+        mainCouponAdapter = new MainCouponAdapter(ct,list);
         rv_coupon.setLayoutManager(new ScrollLinearLayoutManager(ct));
         rv_coupon.setAdapter(mainCouponAdapter);
         rv_coupon.getItemAnimator().setChangeDuration(300);

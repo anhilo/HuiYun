@@ -9,6 +9,7 @@ public class TestModel {
     public String title;
     public boolean isCheck;
     public boolean isExplan;
+    public int statue;
 
     public TestModel add(String title,boolean isCheck){
         TestModel mo = new TestModel();
