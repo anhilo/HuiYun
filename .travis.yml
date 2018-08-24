@@ -6,7 +6,7 @@ android:
     - extra-android-m2repository
     - extra-android-support
 script:
-  - ./gradlew assembleRelease
+  - sudo ./gradlew assembleRelease
 deploy:
   provider: releases
   file: "FILE TO UPLOAD"
