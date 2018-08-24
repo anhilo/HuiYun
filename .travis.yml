@@ -1,4 +1,5 @@
 language: android
+NDK:true
 android:
   components:
     - build-tools-22.0.1
