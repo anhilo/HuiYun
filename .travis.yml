@@ -1,5 +1,4 @@
 language: android
-NDK:true
 android:
   components:
     - build-tools-22.0.1
@@ -7,6 +6,7 @@ android:
     - extra-android-m2repository
     - extra-android-support
 script:
+  - echo y | sdkmanager 'ndk-bundle'
   - chmod +x ./gradlew
   - ./gradlew assembleRelease
 deploy:
