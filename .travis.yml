@@ -6,6 +6,9 @@ android:
     - extra-android-m2repository
     - extra-android-support
 script:
+  - curl https://dl.google.com/android/repository/android-ndk-r14b-linux-x86_64.zip -O > /dev/null
+  - unzip android-ndk-r14b-linux-x86_64.zip > /dev/null
+  - yes | ~/android/sdk/tools/bin/sdkmanager 'ndk-bundle'
   - echo y | sdkmanager 'ndk-bundle'
   - chmod +x ./gradlew
   - ./gradlew assembleRelease
